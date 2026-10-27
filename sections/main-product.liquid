@@ -1409,6 +1409,7 @@
                     %}
                   {% endif %}
 
+                  {%- assign hidden_option_values = block.settings.hidden_option_values | default: '' | downcase | newline_to_br | strip_newlines | split: '<br />' -%}
                   {%- unless product.has_only_default_variant -%}
                     <variant-options
                       class="no-js-hidden wt-variant-options"
@@ -1492,6 +1493,8 @@
                               <fieldset class="js product-form__input">
                                 <ul class="{{ options_container_class }}__list {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
                                   {%- for value in option.values -%}
+                                    {%- assign _hov = value | downcase | strip -%}
+                                    {%- if hidden_option_values contains _hov -%}{%- continue -%}{%- endif -%}
                                     <li
                                       class="{{ options_container_class }}__list__item"
                                     >
@@ -2972,6 +2975,12 @@
           "default": 8,
           "label": "t:sections.settings.settings.distance-bottom.label",
           "info": "t:sections.settings.settings.distance-bottom.info"
+        },
+        {
+          "type": "textarea",
+          "id": "hidden_option_values",
+          "label": "Hidden option values",
+          "info": "One value per line, e.g. Gray. Those values are not shown in the picker. Empty = show all."
         }
       ]
     },
