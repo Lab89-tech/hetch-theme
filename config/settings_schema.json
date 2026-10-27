@@ -715,7 +715,7 @@
         "id": "cart_additional_service_name",
         "default": "t:settings_schema.cart.settings.additional_service_name.default",
         "label": "t:settings_schema.cart.settings.additional_service_name.label"
-      } ,
+      },
       {
         "type": "checkbox",
         "id": "show_view_cart",
@@ -1210,6 +1210,17 @@
         "type": "checkbox",
         "id": "disabled_animations_on_mobile",
         "label": "t:settings_schema.animations.settings.disabled_animation_on_mobile.label"
+      }
+    ]
+  },
+  {
+    "name": "Lab89 – Catalogue",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "hidden_option_values",
+        "label": "Hidden option values (product cards)",
+        "info": "One value per line, e.g. Gray. Hides these option values from colour swatches on product cards in collections, search and the homepage. Empty = show all."
       }
     ]
   }

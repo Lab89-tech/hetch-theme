@@ -281,6 +281,7 @@
         data-omit-tabindex
       >
         {%- comment -%}2. Iterate through colour‑option names{%- endcomment -%}
+        {%- assign card_hidden_option_values = settings.hidden_option_values | default: '' | downcase | newline_to_br | strip_newlines | split: '<br />' -%}
         {% for color_swatch_option in options_as_color_swatches %}
           {%- comment -%}Find real option name & its index (1/2/3){%- endcomment -%}
           {% assign option_name = null %}
@@ -300,6 +301,8 @@
 
           {%- comment -%}3. Loop through every colour value{%- endcomment -%}
           {% for color in product.options_by_name[option_name].values %}
+            {%- assign _hov = color | downcase | strip -%}
+            {%- if card_hidden_option_values contains _hov -%}{%- continue -%}{%- endif -%}
             {% assign rep_variant = null %}
             {% assign color_available = false %}
 
