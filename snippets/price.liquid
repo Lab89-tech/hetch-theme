@@ -1,3 +1,5 @@
+{%- comment -%} Lab89: prices are shown only in the United Kingdom market. Asia and Rest of World are catalogue display (no price). {%- endcomment -%}
+{%- if localization.market.handle == 'united-kingdom' -%}
 {%- liquid
   if use_variant
     assign target = product.selected_or_first_available_variant
@@ -123,3 +125,4 @@
     </span>
   {%- endif -%}
 </div>
+{%- endif -%}
