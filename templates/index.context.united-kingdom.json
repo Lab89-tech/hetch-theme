@@ -84,8 +84,28 @@
       "blocks": {
         "column_zpWjUE": {
           "settings": {
-            "button_label": "Hetch UK",
+            "button_label": "Shop on Tiktok",
             "button_link": "https://www.tiktok.com/@hetch.uk"
+          }
+        },
+        "column_pyBi4k": {
+          "type": "column",
+          "disabled": false,
+          "settings": {
+            "heading": "Amazon",
+            "heading_disable_on_mobile": false,
+            "text": "",
+            "text_disable_on_mobile": false,
+            "header-3e7193415828941a637d0b4c41a3a1be": null,
+            "button_select": "secondary",
+            "button_label": "Shop on Amazon",
+            "button_disable_on_mobile": false,
+            "button_link": "https://www.tiktok.com/@hetch.uk",
+            "button_link_in_new_window": false,
+            "header-3dd0280205b29840090f5fc4e1cd4468": null,
+            "desktop_image": "shopify://shop_images/amazon-logo-amazon-icon-transparent-free-png.webp",
+            "header-0a291244312ca8831c5f977a93822d36": null,
+            "mobile_image": null
           }
         },
         "column_JdzEFn": {
@@ -96,7 +116,13 @@
           "disabled": true,
           "settings": {}
         }
-      }
+      },
+      "block_order": [
+        "column_zpWjUE",
+        "column_pyBi4k",
+        "column_JdzEFn",
+        "column_xcRNCd"
+      ]
     },
     "features_banner_efCpGq": {
       "settings": {},
