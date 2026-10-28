@@ -7,21 +7,4 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
-  "context": {
-    "market": "united-kingdom"
-  },
-  "parent": "cart.json",
-  "sections": {
-    "cart-items": {
-      "disabled": false,
-      "settings": {},
-      "blocks": {}
-    },
-    "featured-collection": {
-      "disabled": true,
-      "settings": {},
-      "blocks": {}
-    }
-  }
-}
+{"context":{"market":"united-kingdom"},"parent":"cart.json","sections":{"cart-items":{"disabled":false,"settings":{},"blocks":{}},"featured-collection":{"disabled":true,"settings":{},"blocks":{}},"hetch_cart_signup":{"type":"hetch-cart-signup","settings":{"heading":"Not signed up yet? Get £5 off this order.","margin_top":0,"margin_bottom":24}}},"order":["cart-items","hetch_cart_signup","cart-footer","featured-collection"]}

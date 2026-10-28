@@ -7,44 +7,4 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
-  "parent": "header-group.json",
-  "context": {
-    "market": "united-kingdom"
-  },
-  "sections": {
-    "header": {
-      "settings": {
-        "logo": "shopify://shop_images/HETCH_LOGO_Blue_96ed6de7-4aa1-4d08-9eaa-44a21f24c884.png",
-        "menu": "uk-main-menu",
-        "layout": "option_5",
-        "header_bg_opacity": 100,
-        "show_country_selector": true,
-        "show_country_selector_label": false,
-        "show_country_selector_flag": true,
-        "suggestions_menu": ""
-      },
-      "blocks": {}
-    },
-    "announcement-bar": {
-      "settings": {
-        "marquee": true
-      },
-      "blocks": {
-        "announcement_KLcd3j": {
-          "disabled": false,
-          "settings": {
-            "text": "Sign up for £5 off"
-          }
-        },
-        "announcement_DKVb4L": {
-          "disabled": false,
-          "settings": {
-            "text": "Free Next Day Delivery",
-            "link": "shopify://policies/shipping-policy"
-          }
-        }
-      }
-    }
-  }
-}
+{"parent":"header-group.json","context":{"market":"united-kingdom"},"sections":{"header":{"settings":{"logo":"shopify://shop_images/HETCH_LOGO_Blue_96ed6de7-4aa1-4d08-9eaa-44a21f24c884.png","menu":"uk-main-menu","layout":"option_5","header_bg_opacity":100,"show_country_selector":true,"show_country_selector_label":false,"show_country_selector_flag":true,"suggestions_menu":"","signup_button_label":"Get £5 off"},"blocks":{}},"announcement-bar":{"settings":{"marquee":true},"blocks":{"announcement_KLcd3j":{"disabled":false,"settings":{"text":"Sign up for £5 off"}},"announcement_DKVb4L":{"disabled":false,"settings":{"text":"Free UK delivery on every order","link":"shopify://policies/shipping-policy"}}}},"hetch_trust_strip":{"type":"hetch-trust-strip","settings":{"background":"#ffffff","text_color":"#1F2A44"},"blocks":{"t1":{"type":"item","settings":{"icon":"van","text":"Free UK delivery","link":"shopify://policies/shipping-policy"}},"t2":{"type":"item","settings":{"icon":"house","text":"Direct from the brand","link":""}},"t3":{"type":"item","settings":{"icon":"chat","text":"UK customer support","link":"shopify://pages/contact"}}},"block_order":["t1","t2","t3"]}},"order":["announcement-bar","header","hetch_trust_strip","page_header_logo_banner_tpXcBm"]}

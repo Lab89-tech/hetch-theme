@@ -1,0 +1,27 @@
+{%- comment -%} Lab89: £5 sign-up nudge on the cart page. Hidden for logged-in customers who already accept marketing, and when the cart is empty. {%- endcomment -%}
+{%- assign hide = false -%}
+{%- if customer and customer.accepts_marketing -%}{%- assign hide = true -%}{%- endif -%}
+{%- if cart.item_count == 0 -%}{%- assign hide = true -%}{%- endif -%}
+{%- unless hide -%}
+<div class="hetch-cart-signup page-width" style="margin-top:{{ section.settings.margin_top }}px;margin-bottom:{{ section.settings.margin_bottom }}px">
+  <div class="hetch-cart-signup__box">
+    <p class="hetch-cart-signup__line"><strong>{{ section.settings.heading | escape }}</strong></p>
+    {%- render 'hetch-signup-form', form_id: 'HetchSignupCart', compact: true, source: 'cart' -%}
+  </div>
+</div>
+<style>
+  .hetch-cart-signup__box{max-width:786px;margin-left:auto;border:1.5px dashed #F26B1D;border-radius:16px;padding:18px 20px;background:#FFF7F2}
+  .hetch-cart-signup__line{margin:0 0 10px;color:#1F2A44}
+</style>
+{%- endunless -%}
+{% schema %}
+{
+  "name": "Cart sign-up nudge",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Not signed up yet? Get £5 off this order." },
+    { "type": "range", "id": "margin_top", "label": "Top margin", "min": 0, "max": 80, "step": 4, "unit": "px", "default": 0 },
+    { "type": "range", "id": "margin_bottom", "label": "Bottom margin", "min": 0, "max": 80, "step": 4, "unit": "px", "default": 24 }
+  ],
+  "presets": [ { "name": "Cart sign-up nudge" } ]
+}
+{% endschema %}

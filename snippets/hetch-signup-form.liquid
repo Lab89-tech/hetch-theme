@@ -1,0 +1,44 @@
+{%- comment -%}
+  Lab89: Hetch £5 sign-up form (header dialog + cart nudge).
+  Creates a subscribed customer (contact[tags] = newsletter), which triggers the Shopify Messaging welcome email.
+  Params: form_id (unique), compact (true/false), source (header/cart)
+{%- endcomment -%}
+{%- assign hetch_code = 'HELLOHETCH5' -%}
+{%- form 'customer', id: form_id, class: 'hetch-signup' -%}
+  <input type="hidden" name="contact[tags]" value="newsletter,hetch-5-signup,{{ source }}">
+  {%- if form.posted_successfully? -%}
+    <div class="hetch-signup__success" role="status">
+      <p class="hetch-signup__title">You're on the list</p>
+      <p class="hetch-signup__text">Your code is <strong class="hetch-signup__code">{{ hetch_code }}</strong>. Use it at checkout for £5 off orders of £50 or more. We've emailed it to you as well.</p>
+      <a class="button button--full-width button--primary" href="/discount/{{ hetch_code }}?redirect={{ routes.cart_url }}">Apply £5 off to my cart</a>
+    </div>
+  {%- else -%}
+    {%- unless compact -%}
+      <p class="hetch-signup__title">£5 off when you sign up</p>
+      <p class="hetch-signup__text">Join the Hetch email list and get £5 off orders of £50 or more.</p>
+    {%- endunless -%}
+    <div class="hetch-signup__row">
+      <label class="visually-hidden" for="{{ form_id }}-email">Email address</label>
+      <input id="{{ form_id }}-email" class="hetch-signup__input" type="email" name="contact[email]" required autocomplete="email" placeholder="Your email address" value="{{ form.email }}">
+      <button type="submit" class="button button--primary hetch-signup__submit">Get my £5 code</button>
+    </div>
+    {%- if form.errors -%}
+      <p class="hetch-signup__error" role="alert">{{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}</p>
+    {%- endif -%}
+    <p class="hetch-signup__small">By signing up, you agree to receive marketing emails from Hetch. You can unsubscribe at any time. One use per customer. UK delivery only.</p>
+  {%- endif -%}
+{%- endform -%}
+{%- unless hetch_signup_css_done -%}
+  <style>
+    .hetch-signup__title{font-size:1.25rem;font-weight:600;margin:0 0 6px;color:#1F2A44}
+    .hetch-signup__text{margin:0 0 14px}
+    .hetch-signup__row{display:flex;gap:8px;flex-wrap:wrap}
+    .hetch-signup__input{flex:1 1 200px;min-height:48px;padding:0 16px;border:1px solid #c9c9c9;border-radius:30px;font:inherit}
+    .hetch-signup__submit{flex:0 0 auto;white-space:nowrap}
+    .hetch-signup__code{color:#F26B1D;letter-spacing:.04em}
+    .hetch-signup__small{font-size:12px;opacity:.75;margin:10px 0 0}
+    .hetch-signup__error{color:#b42318;font-size:14px;margin:8px 0 0}
+    .hetch-signup__success .button{margin-top:6px}
+  </style>
+  {%- assign hetch_signup_css_done = true -%}
+{%- endunless -%}

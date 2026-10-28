@@ -398,6 +398,11 @@
     </div>
 
     <ul class="wt-header__panel wt-header__panel--no-labels">
+      {%- if section.settings.signup_button_label != blank -%}
+        <li class="wt-header__panel__item wt-header__panel__item--signup">
+          <button type="button" class="hetch-signup-trigger" data-hetch-signup-open>{{ section.settings.signup_button_label | escape }}</button>
+        </li>
+      {%- endif -%}
       {%- if shop.customer_accounts_enabled -%}
         <li class="wt-header__panel__item wt-header__panel__item--account">
           <a href="{{ routes.account_url }}" class="wt-header__panel__link wt-icon">
@@ -430,6 +435,7 @@
     {% endif %}
   </div>
 </page-header>
+{%- if section.settings.signup_button_label != blank -%}{%- render 'hetch-signup-dialog' -%}{%- endif -%}
 
 {%- if request.page_type != 'cart' -%}
   {%- render 'cart-notification' -%}
@@ -594,6 +600,12 @@
       "default": false,
       "label": "t:sections.header.settings.header_always_blurred.label",
       "info": "t:sections.header.settings.header_always_blurred.info"
+    },
+    {
+      "type": "text",
+      "id": "signup_button_label",
+      "label": "Sign-up button label (Lab89)",
+      "info": "Shows a button in the header that opens the £5 sign-up box. Leave empty to hide."
     },
     {
       "type": "checkbox",
