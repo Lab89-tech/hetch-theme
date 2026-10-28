@@ -12,6 +12,7 @@
     "market": "united-kingdom"
   },
   "current": {
+    "cart_type": "page",
     "show_view_cart": true,
     "show_vendor": false,
     "product_source_cross_sells": "product_list",
