@@ -16,7 +16,13 @@
     "header": {
       "settings": {
         "logo": "shopify://shop_images/HETCH_LOGO_Blue_96ed6de7-4aa1-4d08-9eaa-44a21f24c884.png",
-        "menu": "uk-main-menu"
+        "menu": "uk-main-menu",
+        "layout": "option_5",
+        "header_bg_opacity": 100,
+        "show_country_selector": true,
+        "show_country_selector_label": false,
+        "show_country_selector_flag": true,
+        "suggestions_menu": ""
       },
       "blocks": {}
     },
@@ -32,6 +38,7 @@
           }
         },
         "announcement_DKVb4L": {
+          "disabled": false,
           "settings": {
             "text": "Free Next Day Delivery",
             "link": "shopify://policies/shipping-policy"
