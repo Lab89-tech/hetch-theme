@@ -1,1 +1,141 @@
-{"parent":"index.json","context":{"market":"united-kingdom"},"sections":{"collection_list_VVQreD":{"settings":{"disable_images":false,"number_of_column_desktop":3,"number_of_column_mobile":2},"blocks":{"featured_collection_8cWnFM":{"settings":{"image_collection":"shopify:\/\/shop_images\/First_image_copy.png"}},"featured_collection_JAVt4r":{"disabled":true,"settings":{"image_collection":"shopify:\/\/shop_images\/Firstimagecopy.png","text_collection":"Mini Fan"}},"featured_collection_tREzkq":{"disabled":true,"settings":{}},"featured_collection_Lh3Dab":{"disabled":true,"settings":{}},"featured_collection_aHjp3d":{"disabled":true,"settings":{}}}},"collage_AXBG8H":{"settings":{},"blocks":{"image_4fCAPD":{"disabled":true,"settings":{}},"image_hH8MtF":{"disabled":true,"settings":{}}}},"featured_collection_98txhK":{"settings":{"title":"Featured Collection","product_list":["hetch-v10-wet-dry-vacuum-cleaner-blower-2025-upgraded-spot-cleaner-dvc-1422-hc","hetch-v3-pro-hyper-clean-handheld-dust-mite-bed-vacuum-cleaner-mop-hvc-1416-hc","hetch-h2-handheld-vacuum-cleaner-mop-hvc-1413-hc"],"products_to_show":3,"button_select":"primary","number_of_column_desktop":3},"blocks":{}},"multicolumn_hyPJ6j":{"settings":{},"blocks":{"column_zpWjUE":{"settings":{"button_label":"Hetch UK","button_link":"https:\/\/www.tiktok.com\/@hetch.uk"}},"column_JdzEFn":{"disabled":true,"settings":{}},"column_xcRNCd":{"disabled":true,"settings":{}}}},"features_banner_efCpGq":{"settings":{},"blocks":{"image_LqNFed":{"settings":{"desktop_image":"shopify:\/\/shop_images\/UKCA_black_fill.png","heading":"UKCA Certified","text":"<p>All our products adhere to UKCA requirements.<\/p>","link":""}},"image_QwajmJ":{"settings":{"text":"<p>Enjoy peace of mind with our trusted <\/p><p>1-year warranty coverage.<\/p>"}}}},"shoppable_video_PWWPiV":{"settings":{},"blocks":{},"disabled":true}}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "index.json",
+  "context": {
+    "market": "united-kingdom"
+  },
+  "sections": {
+    "collection_list_VVQreD": {
+      "disabled": true,
+      "settings": {
+        "disable_images": false,
+        "number_of_column_desktop": 3,
+        "number_of_column_mobile": 2
+      },
+      "blocks": {
+        "featured_collection_8cWnFM": {
+          "settings": {
+            "image_collection": "shopify://shop_images/First_image_copy.png"
+          }
+        },
+        "featured_collection_JAVt4r": {
+          "disabled": true,
+          "settings": {
+            "image_collection": "shopify://shop_images/Firstimagecopy.png",
+            "text_collection": "Mini Fan"
+          }
+        },
+        "featured_collection_tREzkq": {
+          "disabled": true,
+          "settings": {}
+        },
+        "featured_collection_Lh3Dab": {
+          "disabled": true,
+          "settings": {}
+        },
+        "featured_collection_aHjp3d": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    },
+    "collage_AXBG8H": {
+      "settings": {},
+      "blocks": {
+        "image_4fCAPD": {
+          "disabled": true,
+          "settings": {}
+        },
+        "image_hH8MtF": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    },
+    "featured_collection_98txhK": {
+      "settings": {
+        "title": "Featured Collection",
+        "product_list": [
+          "hetch-v10-wet-dry-vacuum-cleaner-blower-2025-upgraded-spot-cleaner-dvc-1422-hc",
+          "hetch-v3-pro-hyper-clean-handheld-dust-mite-bed-vacuum-cleaner-mop-hvc-1416-hc",
+          "hetch-h2-handheld-vacuum-cleaner-mop-hvc-1413-hc"
+        ],
+        "products_to_show": 3,
+        "button_select": "primary",
+        "number_of_column_desktop": 3
+      },
+      "blocks": {}
+    },
+    "shoppable_video_PWWPiV": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "multicolumn_hyPJ6j": {
+      "settings": {},
+      "blocks": {
+        "column_zpWjUE": {
+          "settings": {
+            "button_label": "Hetch UK",
+            "button_link": "https://www.tiktok.com/@hetch.uk"
+          }
+        },
+        "column_JdzEFn": {
+          "disabled": true,
+          "settings": {}
+        },
+        "column_xcRNCd": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    },
+    "features_banner_efCpGq": {
+      "settings": {},
+      "blocks": {
+        "image_QwajmJ": {
+          "settings": {
+            "text": "<p>Enjoy peace of mind with our trusted </p><p>1-year warranty coverage.</p>"
+          }
+        },
+        "image_LqNFed": {
+          "settings": {
+            "desktop_image": "shopify://shop_images/UKCA_black_fill.png",
+            "heading": "UKCA Certified",
+            "text": "<p>All our products adhere to UKCA requirements.</p>",
+            "link": ""
+          }
+        }
+      }
+    }
+  },
+  "order": [
+    "collection_list_VVQreD",
+    "featured_collection_98txhK",
+    "rich_text_J4WXaP",
+    "image_banner_aQDjXf",
+    "rich_text_Bg8A64",
+    "brands_cygNdd",
+    "collage_AXBG8H",
+    "grid_view_PEBP9T",
+    "rich_text_fpGtBc",
+    "rich_text_with_image_d9iPb9",
+    "shoppable_video_PWWPiV",
+    "image_with_text_XEykNM",
+    "video_reels_kb4KdA",
+    "image_banner_tWAmij",
+    "collection_feature_gjXgRQ",
+    "multicolumn_hyPJ6j",
+    "testimonials_mB6iUg",
+    "features_banner_efCpGq",
+    "newsletter_i8q83Y"
+  ]
+}
