@@ -1,1 +1,43 @@
-{"parent":"header-group.json","context":{"market":"united-kingdom"},"sections":{"header":{"settings":{"menu":"uk-main-menu","logo":"shopify:\/\/shop_images\/HETCH_LOGO_Blue_96ed6de7-4aa1-4d08-9eaa-44a21f24c884.png"},"blocks":{}}}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "united-kingdom"
+  },
+  "sections": {
+    "header": {
+      "settings": {
+        "logo": "shopify://shop_images/HETCH_LOGO_Blue_96ed6de7-4aa1-4d08-9eaa-44a21f24c884.png",
+        "menu": "uk-main-menu"
+      },
+      "blocks": {}
+    },
+    "announcement-bar": {
+      "settings": {
+        "marquee": true
+      },
+      "blocks": {
+        "announcement_KLcd3j": {
+          "disabled": false,
+          "settings": {
+            "text": "Sign up for £5 off"
+          }
+        },
+        "announcement_DKVb4L": {
+          "settings": {
+            "text": "Free Next Day Delivery",
+            "link": "shopify://policies/shipping-policy"
+          }
+        }
+      }
+    }
+  }
+}
