@@ -11,5 +11,26 @@
   "context": {
     "market": "united-kingdom"
   },
-  "current": {}
+  "current": {
+    "show_view_cart": true,
+    "show_vendor": false,
+    "product_source_cross_sells": "product_list",
+    "product_list_cross_sells": [
+      "hetch-h2-handheld-vacuum-cleaner-mop-hvc-1413-hc",
+      "hetch-v10-wet-dry-vacuum-cleaner-blower-2025-upgraded-spot-cleaner-dvc-1422-hc",
+      "hetch-v3-pro-hyper-clean-handheld-dust-mite-bed-vacuum-cleaner-mop-hvc-1416-hc"
+    ],
+    "enable_free_shipping_bar": false,
+    "social_instagram_link": "https://www.instagram.com/hetch.uk/",
+    "social_tiktok_link": "https://www.tiktok.com/@hetch.uk",
+    "show_product_vendor": false,
+    "show_product_price": true,
+    "blocks": {
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  }
 }
