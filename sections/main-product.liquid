@@ -1680,7 +1680,17 @@
                     data-href="{{ block.settings.link }}"
                     onclick="window.open(this.dataset.href, '_blank', 'noopener')"
                   >
-                    {{- block.settings.label | escape -}}
+                    {%- if block.settings.icon != blank -%}
+                      <img
+                        src="{{ block.settings.icon | image_url: height: 48 }}"
+                        alt=""
+                        width="{{ 24 | times: block.settings.icon.aspect_ratio | round }}"
+                        height="24"
+                        loading="lazy"
+                        style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:10px"
+                      >
+                    {%- endif -%}
+                    <span style="vertical-align:middle">{{- block.settings.label | escape -}}</span>
                   </button>
                 </div>
               {%- endif -%}
@@ -3129,6 +3139,7 @@
       "settings": [
         { "type": "checkbox", "id": "show", "label": "Show button", "default": true },
         { "type": "text", "id": "label", "label": "Label", "default": "Buy on Amazon" },
+        { "type": "image_picker", "id": "icon", "label": "Icon", "info": "Optional. Shown left of the label at 24px high. Use the platform's official logo file." },
         { "type": "url", "id": "link", "label": "Link", "info": "Button stays hidden until a link is set." },
         { "type": "select", "id": "style", "label": "Style", "default": "secondary",
           "options": [ { "value": "primary", "label": "Primary" }, { "value": "secondary", "label": "Secondary" } ] }
