@@ -1,1 +1,39 @@
-{"parent":"footer-group.json","context":{"market":"united-kingdom"},"sections":{"footer":{"settings":{},"blocks":{"menu_GzMLqf":{"settings":{"links":"contact-us-uk"}}}}}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "footer-group.json",
+  "context": {
+    "market": "united-kingdom"
+  },
+  "sections": {
+    "footer": {
+      "settings": {
+        "show-payments-icons": true
+      },
+      "blocks": {
+        "menu_GzMLqf": {
+          "settings": {
+            "links": "contact-us-uk"
+          }
+        },
+        "text_JtUjig": {
+          "disabled": true,
+          "settings": {}
+        },
+        "newsletter_eQGe9A": {
+          "settings": {
+            "heading_newsletter": "Sign up for £5 off",
+            "text_newsletter": "<p>Access exclusive offers, news and advice.</p>"
+          }
+        }
+      }
+    }
+  }
+}
